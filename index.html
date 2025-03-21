@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Link - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .typewriter-text {
+      border-right: 2px solid;
+      animation: blink 0.75s step-end infinite;
+    }
+
+    @keyframes blink {
+
+      from,
+      to {
+        border-color: transparent
+      }
+
+      50% {
+        border-color: black;
+      }
+    }
+
+    .card {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .highlight-text {
+      background: linear-gradient(120deg, #84e18760 0%, #34d39960 100%);
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .hover-zoom {
+      transition: transform 0.3s ease;
+    }
+
+    .hover-zoom:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="bg-white shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="index.html" class="text-2xl font-bold text-green-600">Meal Link</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+          <a href="ngo.html" class="text-gray-700 hover:text-green-600">NGOs</a>
+          <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('Photos/hero.jpg')">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+      <div class="container mx-auto px-4">
+        <h2 id="typewriter" class="text-3xl md:text-5xl font-bold text-white typewriter-text"></h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 bg-gradient-to-br from-green-50 to-blue-50">
+    <div class="container mx-auto md:flex items-center justify-between gap-12">
+      <div class="md:w-1/2 mb-8 md:mb-0 relative group">
+        <div class="absolute inset-0 bg-green-500 mix-blend-multiply opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-lg"></div>
+        <img src="Photos/donotwaste.jpg" alt="Food waste" 
+             class="rounded-lg shadow-xl w-full border-4 border-white transform transition duration-500 hover:scale-102">
+      </div>
+      
+      <div class="md:w-1/2 md:pl-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+          India's Food Waste Crisis: A Nation's Dilemma
+        </h2>
+        
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700 leading-relaxed mb-4">
+              India's paradoxical reality: While <span class="font-semibold text-green-700">194 million</span> remain undernourished, 
+              we waste <span class="font-semibold text-red-600">68 million tonnes</span> of food annually - equivalent to 
+              <span class="highlight-text">₹1.5 lakh crore</span> lost.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div class="bg-green-50 p-4 rounded-lg text-center">
+                <p class="text-2xl font-bold text-green-700 mb-1">50 kg</p>
+                <p class="text-sm text-gray-600">Per capita annual waste</p>
+              </div>
+              <div class="bg-blue-50 p-4 rounded-lg text-center">
+                <p class="text-2xl font-bold text-blue-700 mb-1">40%</p>
+                <p class="text-sm text-gray-600">Food never reaches consumers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto py-16 px-4">
+    <!-- Wedding Waste Challenges Section -->
+    <div class="mb-16 bg-white p-8 rounded-xl shadow-2xl">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+        The Wedding Waste Challenge
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Challenge 1 -->
+        <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-600 transform transition duration-500 hover:scale-105">
+          <div class="text-4xl text-green-600 mb-4">01</div>
+          <h3 class="text-xl font-semibold mb-3">Massive Quantities</h3>
+          <p class="text-gray-600">
+            A single wedding wastes <span class="font-bold">200-300 kg</span> of food, enough to feed <span class="font-bold">1,000 people</span>.
+          </p>
+        </div>
+        
+        <!-- Challenge 2 -->
+        <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400 transform transition duration-500 hover:scale-105">
+          <div class="text-4xl text-yellow-600 mb-4">02</div>
+          <h3 class="text-xl font-semibold mb-3">Cultural Factors</h3>
+          <p class="text-gray-600">
+            The "more is better" mindset leads to <span class="font-bold">25-30% over-catering</span> at weddings.
+          </p>
+        </div>
+        
+        <!-- Challenge 3 -->
+        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 transform transition duration-500 hover:scale-105">
+          <div class="text-4xl text-red-600 mb-4">03</div>
+          <h3 class="text-xl font-semibold mb-3">Logistical Issues</h3>
+          <p class="text-gray-600">
+            Lack of proper storage causes <span class="font-bold">40% spoilage</span> of wedding leftovers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 px-4 bg-gradient-to-r from-green-50 to-blue-50">
+    <div class="container mx-auto md:flex items-center justify-between gap-12">
+      <div class="md:w-1/2 mb-8 md:mb-0 hover-zoom">
+        <img src="Photos/pic.jpg" alt="Hunger crisis" class="rounded-lg shadow-xl w-full border-4 border-white">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+          <span class="text-green-600">Hunger</span> in India: A Crisis Amidst Plenty
+        </h2>
+        <div class="stats-card mb-6">
+          <p class="text-gray-700 leading-relaxed mb-4">
+            While India ranks as the world's second-largest food producer:
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              14% of population faces <span class="highlight-text">chronic food insecurity</span>
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              38.4% children under 5 show <span class="highlight-text">stunted growth</span> (NFHS-5)
+            </li>
+            <li class="flex items-center">
+              <span class="text-green-600 mr-2">✓</span>
+              Over 20 crore Indians sleep hungry <span class="highlight-text">every night</span>
+            </li>
+          </ul>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          The paradox deepens when we consider that India wastes food worth <span class="font-bold text-green-700">₹1.5 lakh crore</span> annually - 
+          enough to feed entire Bihar for a year. Urban weddings alone account for <span class="font-bold text-green-700">15-20%</span> of this waste, 
+          while rural areas face post-harvest losses due to inadequate storage.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enhanced Solution Section -->
+  <section class="py-16 px-4 bg-white">
+    <div class="container mx-auto md:flex items-center justify-between gap-12 flex-row-reverse">
+      <div class="md:w-1/2 mb-8 md:mb-0 hover-zoom">
+        <img src="Photos/hero.jpg" alt="Solution" class="rounded-lg shadow-xl w-full border-4 border-white">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+          Bridging the Gap: <span class="text-green-600">From Waste to Meal</span>
+        </h2>
+        <div class="bg-green-50 p-6 rounded-lg mb-6">
+          <p class="text-lg font-semibold mb-4 text-green-800">
+            Meal Link's 3-Step Solution:
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+              <div class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center mr-4">1</div>
+              <p class="m-0">Wedding Family contact us from our platform</p>
+            </div>
+            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+              <div class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center mr-4">2</div>
+              <p class="m-0">Our network of 200+ NGOs verifies and coordinates pickup </p>
+            </div>
+            <div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+              <div class="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center mr-4">3</div>
+              <p class="m-0">Food Reaches To the Needy People By NGO </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Cards Section -->
+  <section class="container mx-auto py-16 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Mission Card -->
+      <div class="card bg-white shadow-2xl rounded-xl overflow-hidden transform transition duration-500 hover:scale-105 group">
+        <div class="relative overflow-hidden">
+          <img src="Photos/HANDS.jpg" alt="NGO Collaboration" class="w-full h-48 object-cover transform transition duration-500 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+        </div>
+        <div class="p-6">
+          <h5 class="text-2xl font-bold text-gray-800 mb-4">OUR MISSION</h5>
+          <p class="text-gray-600 leading-relaxed">
+            We're revolutionizing wedding food management by:
+            <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+              <li>Reducing waste by up to 80% at partner venues</li>
+              <li>Creating sustainable wedding practices</li>
+              <li>Educating caterers on portion control</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+  
+      <!-- NGO Card -->
+      <div class="card bg-white shadow-2xl rounded-xl overflow-hidden transform transition duration-500 hover:scale-105 group">
+        <div class="relative overflow-hidden">
+          <img src="Photos/PEOPLE.jpg" alt="NGO Collaboration" class="w-full h-48 object-cover transform transition duration-500 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+        </div>
+        <div class="p-6">
+          <h5 class="text-2xl font-bold text-gray-800 mb-4">NGO NETWORK</h5>
+          <p class="text-gray-600 leading-relaxed">
+            Our NGO partners:
+            <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+              <li>Serve 200+ communities nationwide</li>
+              <li>Operate 50+ refrigerated vans</li>
+              <li>Distribute 10,000+ meals weekly</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+  
+      <!-- Connect Card -->
+      <div class="card bg-white shadow-2xl rounded-xl overflow-hidden transform transition duration-500 hover:scale-105 group">
+        <div class="relative overflow-hidden">
+          <img src="Photos/NGOS.jpg" alt="Home Mission" class="w-full h-48 object-cover transform transition duration-500 group-hover:scale-110" />
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-500"></div>
+        </div>
+        <div class="p-6">
+          <h5 class="text-2xl font-bold text-gray-800 mb-4">GET INVOLVED</h5>
+          <p class="text-gray-600 leading-relaxed">
+            Join our movement:
+            <ul class="list-disc list-inside mt-2 space-y-2 text-gray-600">
+              <li>Register your wedding</li>
+              <li>Volunteer with our network</li>
+              <li>Sponsor food distribution</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  
+<!-- Join Us Section -->
+<div class="mt-16 text-center">
+  <h2 class="text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-6">
+    Join Us in the Fight Against Hunger
+  </h2>
+  <a href="contact.html" class="inline-block bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition duration-300 transform hover:scale-105">
+    Be Part of the Solution
+  </a>
+</div>
+
+<!-- Gap between sections -->
+<div class="my-12"></div> <!-- Adds a gap of 12 units (3rem) -->
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; 2023 Meal Link. All rights reserved.</p>
+    <div class="mt-4">
+      <a href="index.html" class="mx-2 hover:text-green-400">Home</a>
+      <a href="ngo.html" class="mx-2 hover:text-green-400">NGOs</a>
+      <a href="contact.html" class="mx-2 hover:text-green-400">Contact</a>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    // Typewriter Effect
+    const fullText = "Welcome to Meal Link! Meal Link connects people who wish to donate leftover wedding food to those in need.";
+    let index = 0;
+    const typewriterElement = document.getElementById('typewriter');
+
+    function typeWriter() {
+      if (index < fullText.length) {
+        typewriterElement.innerHTML += fullText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+      } else {
+        setTimeout(() => {
+          typewriterElement.innerHTML = '';
+          index = 0;
+          typeWriter();
+        }, 2000);
+      }
+    }
+
+    // Start the typewriter effect
+    typeWriter();
+  </script>
+</body>
+
+</html>
