@@ -45,4 +45,3 @@
 3️⃣ Import the provided SQL file or manually create the necessary tables.  
 
 ### **📝 Step 4: Configure and run the Project**  
-1️⃣ Move the cloned project folder to the `htdocs` directory in XAMPP (e.g., `C:\xampp\htdocs\Meallink`).  
